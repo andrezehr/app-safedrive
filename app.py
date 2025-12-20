@@ -3,14 +3,6 @@ import streamlit as st
 # Configuração da Página
 st.set_page_config(page_title="SafeDrive Brasil", page_icon="🛡️", layout="centered")
 
-# Adicione isso logo após o st.set_page_config
-st.markdown("""
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-    </style>
-    """, unsafe_allow_html=True)
 
 # Inicialização de variáveis de sessão
 if 'gramas_alcool' not in st.session_state:
@@ -141,3 +133,4 @@ if len(st.session_state.historico) > 0:
 st.divider()
 
 st.caption("⚠️ **Atenção:** Simulador baseado em médias estatísticas. A tolerância da Lei Seca é ZERO. Se beber, não dirija.")
+
